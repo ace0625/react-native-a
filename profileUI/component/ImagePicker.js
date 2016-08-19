@@ -24,7 +24,7 @@ export default class ImagePicker extends React.Component {
       maxWidth: 500,
       maxHeight: 500,
       storageOptions: {
-      skipBackup: true
+        skipBackup: true
       }
     };
 
@@ -91,23 +91,23 @@ export default class ImagePicker extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
-          <View style={[styles.avatar, styles.avatarContainer, {marginBottom: 20}]}>
-          { this.state.avatarSource === null ? <Text>Select a Photo</Text> :
-            <Image style={styles.avatar} source={this.state.avatarSource} />
-          }
-          </View>
-        </TouchableOpacity>
+      <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
+      <View style={[styles.avatar, styles.avatarContainer, {marginBottom: 20}]}>
+      { this.state.avatarSource === null ? <Text>Select a Photo</Text> :
+        <Image style={styles.avatar} source={this.state.avatarSource} />
+      }
+      </View>
+      </TouchableOpacity>
 
-        <TouchableOpacity onPress={this.selectVideoTapped.bind(this)}>
-          <View style={[styles.avatar, styles.avatarContainer]}>
-            <Text>Select a Video</Text>
-          </View>
-        </TouchableOpacity>
+      <TouchableOpacity onPress={this.selectVideoTapped.bind(this)}>
+      <View style={[styles.avatar, styles.avatarContainer]}>
+      <Text>Select a Video</Text>
+      </View>
+      </TouchableOpacity>
 
-        { this.state.videoSource &&
-          <Text style={{margin: 8, textAlign: 'center'}}>{this.state.videoSource}</Text>
-        }
+      { this.state.videoSource &&
+        <Text style={{margin: 8, textAlign: 'center'}}>{this.state.videoSource}</Text>
+      }
       </View>
     );
   }

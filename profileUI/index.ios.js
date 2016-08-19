@@ -13,8 +13,9 @@ import { Router, Scene } from 'react-native-router-flux'
 // import ButtonEx from './component/ButtonEx';
  // import ImgPicker from './component/ImagePicker';
 // import UiTest from './component/UiTest';
-import PagerOne from './component/PagerOne'
-import PagerTwo from './component/PagerTwo'
+// import PagerOne from './component/PagerOne'
+// import PagerTwo from './component/PagerTwo'
+import Ex from './Example'
 
 class profileUI extends Component {
   render() {
@@ -22,12 +23,14 @@ class profileUI extends Component {
       // <UiTest />
     //  <ImgPicker />
       // <ButtonEx />
-      <Router>
-        <Scene key="root">
-          <Scene key="pagerOne" component={PagerOne} title="PagerOne" initial={true} />
-          <Scene key="pagerTwo" component={PagerTwo}  title="PagerTwo" />
-        </Scene>
-      </Router>
+
+      <Ex />
+      // {/* <Router>
+      //   <Scene key="root">
+      //     <Scene key="pagerOne" component={PagerOne} title="PagerOne" initial={true} />
+      //     <Scene key="pagerTwo" component={PagerTwo}  title="PagerTwo" />
+      //   </Scene>
+      // </Router> */}
     )
   }
 }
