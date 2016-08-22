@@ -5,6 +5,10 @@ import {
   Text,
   Image,
 } from 'react-native';
+import User from './user';
+import NavBar from './navBar';
+import ButtonGroup from './buttonGroup';
+import Taps from './taps';
 
 export default class Layout2 extends Component {
   render() {
@@ -20,77 +24,6 @@ export default class Layout2 extends Component {
         <Taps />
       </View>
     );
-  }
-}
-
-class NavBar extends Component {
-  render() {
-    return (
-    <View style={styles.navBar}>
-      <Text style={styles.navBarText}>
-        More
-      </Text>
-    </View>
-  );
-  }
-}
-
-class User extends Component {
-  render() {
-    return (
-    <View style={styles.user}>
-      <View style={{ height: 150, flexDirection: 'row', borderWidth: 1, alignItems: 'center' }}>
-        <View style={{ width: 100 }}>
-           <View style={{ width: 100, height: 100 }} >
-           </View>
-        </View>
-         <View style={{ flex: 1 }}>
-           <Text>Nickname: </Text>
-           <Text>Name / ID: </Text>
-           <Text>School: </Text>
-         </View>
-      </View>
-      <View style={{ height: 50, flexDirection: 'row', borderWidth: 1 }}>
-        <View style={{ flex: 1, height: 50, flexDirection: 'row', borderWidth: 1,
-          alignItems: 'center', justifyContent: 'center', }}>
-          <View style={{ width: 30, height: 30, backgroundColor: 'gray' }}>
-          </View>
-          <Text>My post</Text>
-        </View>
-        <View style={{ flex: 1, height: 50, flexDirection: 'row', borderWidth: 1,
-          alignItems: 'center', justifyContent: 'center', }}>
-          <View style={{ width: 30, height: 30, backgroundColor: 'gray' }}>
-          </View>
-          <Text>My post</Text>
-        </View>
-        <View style={{ flex: 1, height: 50, flexDirection: 'row', borderWidth: 1,
-          alignItems: 'center', justifyContent: 'center', }}>
-          <View style={{ width: 30, height: 30, backgroundColor: 'gray' }}>
-          </View>
-          <Text>My post</Text>
-        </View>
-      </View>
-    </View>
-  );
-  }
-}
-
-class ButtonGroup extends Component {
-  render() {
-    return (
-    <View style={styles.buttonGroup}>
-
-    </View>
-  );
-  }
-}
-class Taps extends Component {
-  render() {
-    return (
-    <View style={styles.taps}>
-
-    </View>
-  );
   }
 }
 

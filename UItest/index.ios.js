@@ -8,7 +8,8 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
 } from 'react-native';
-import { Router, Scene } from 'react-native-router-flux';
+// import { Router, Scene } from 'react-native-router-flux';
+// import NavBar from './component/NavBar';
 
 // import ButtonEx from './component/ButtonEx';
 // import ImgPicker from './component/ImagePicker';
@@ -17,8 +18,11 @@ import { Router, Scene } from 'react-native-router-flux';
 // import PagerTwo from './component/PagerTwo'
 // import Ex from './Example';
 // import Layout from './component/Layout';
-import Layout2 from './component/Layout2';
+// import Layout2 from './component/Layout2';
 // import Layout3 from './component/Layout3';
+
+// import PropTest from './component/propTest';
+import TodoList from './component/todoList';
 
 class UItest extends Component {
   render() {
@@ -28,14 +32,17 @@ class UItest extends Component {
       // <ButtonEx />
       // <Ex />
       // <Layout />
-      <Layout2 />
       // <Layout2 />
+      // <Layout3 />
       // {/* <Router>
       //   <Scene key="root">
       //     <Scene key="pagerOne" component={PagerOne} title="PagerOne" initial={true} />
       //     <Scene key="pagerTwo" component={PagerTwo}  title="PagerTwo" />
       //   </Scene>
       // </Router> */}
+
+      // <PropTest />
+      <TodoList />
     );
   }
 }
