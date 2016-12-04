@@ -62,16 +62,6 @@ export default class TodoList extends Component {
       inputText: '',
       todos: todos,
     });
-    // let todoItem = {
-    //   context: this.state.inputText,
-    //   complete: false,
-    // };
-    // let todos = this.state.todos;
-    // todos.push(todoItem);
-    // this.setState({
-    //     inputText: '',
-    //     todos: todos,
-    //   });
   }
   /*
     complete adding

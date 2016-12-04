@@ -5,6 +5,9 @@ import {
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
+/*
+  this is pager two
+*/
 export default class PagerTwo extends Component {
   render() {
     return (

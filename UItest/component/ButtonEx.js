@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {
 	View,
 	Text,
 	StyleSheet,
 	TouchableNativeFeedback,
 	Platform,
-} from 'react-native'
+} from 'react-native';
 import Button from 'apsl-react-native-button'
 
 class ButtonEx extends Component {
-	
 	constructor(props) {
 	  super(props);
 	  this.state = {

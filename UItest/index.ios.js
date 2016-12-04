@@ -22,7 +22,11 @@ import {
 // import Layout3 from './component/Layout3';
 
 // import PropTest from './component/propTest';
-import TodoList from './component/todoList';
+// import TodoList from './component/todoList';
+// import AbsoluteView from './component/absoluteView';
+import ListView1 from './component/ListView1';
+import ScrollTab from './component/ScrollTab';
+// import Tab from './component/taps';
 
 class UItest extends Component {
   render() {
@@ -42,7 +46,12 @@ class UItest extends Component {
       // </Router> */}
 
       // <PropTest />
-      <TodoList />
+      // <TodoList />
+      // <AbsoluteView />
+      <ListView1>
+        <ScrollTab />
+      </ListView1>
+
     );
   }
 }
