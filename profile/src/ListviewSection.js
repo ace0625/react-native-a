@@ -7,7 +7,6 @@ import {
     TouchableOpacity,
     AlertIndicatorIOS,
     ActivityIndicatorIOS,
-    AlertIOS,
 } from 'react-native';
 
 var API_URL = 'http://demo9383702.mockable.io/users';
