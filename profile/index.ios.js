@@ -12,3 +12,4 @@ import {
 import App from './src/App';
 
 AppRegistry.registerComponent('profile', () => App);
+
